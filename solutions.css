@@ -104,7 +104,7 @@ i.ex-10-icon.fa-circle-notch {
 /* esercizio 11 */
 
 i.ex-11-icon.fa-circle-notch:hover {
-    animation: spin-1 linear 2s;
+    animation: spin-1 2s linear;
     animation-iteration-count: 1;
 }
 
@@ -116,12 +116,12 @@ i.ex-11-icon.fa-circle-notch:hover {
 /* esercizio 12 */
 
 a.ex-12-button:hover > div.ex-12-top-white {
-    animation: move-dx linear 2s;
+    animation: move-dx 2s linear;
     animation-iteration-count: 1;
 }
 
 a.ex-12-button:hover > div.ex-12-bottom-white {
-    animation: move-sx linear 2s;
+    animation: move-sx 2s linear;
     animation-iteration-count: 1;
 }
 
@@ -148,34 +148,34 @@ a.ex-12-button:hover > div.ex-12-bottom-white {
 /* esercizio 13 */
 
 a.ex-13-button:hover > div.ex-13-top-white {
-    animation: move-dx-1 linear 4s;
+    animation: move-dx-1 3s linear;
     animation-iteration-count: 1;
 }
 
 a.ex-13-button:hover > div.ex-13-bottom-white {
-    animation: move-sx-1 linear 4s;
+    animation: move-sx-1 3s linear;
     animation-iteration-count: 1;
 }
 
 @keyframes move-dx-1 {
     20% {
         top: -10px;
-        left: 100%;
+        left: calc(100% - 2px);
     }
 
     40% {
-        top: calc(100% - 20px);
-        left: 100%;
+        top: 100%;
+        left: calc(100% - 2px);
     }
 
     60% {
         top: 100%;
-        left: 0;
+        left: -20px;
     }
 
     80% {
         top: -10px;
-        left: -10px;
+        left: -20px;
     }
 
     100% {
@@ -187,22 +187,22 @@ a.ex-13-button:hover > div.ex-13-bottom-white {
 @keyframes move-sx-1 {
     20% {
         bottom: -10px;
-        right: calc(100% - 60px);
+        right: calc(100% - 57px);
     }
 
     40% {
-        bottom: calc(100% - 20px);
-        right: calc(100% - 20px);
+        bottom: 100%;
+        right: calc(100% - 57px);
     }
 
     60% {
         bottom: 100%;
-        right: -10px;
+        right: -58px;
     }
 
     80% {
         bottom: -10px;
-        right: 0;
+        right: -58px;
     }
 
     100% {
