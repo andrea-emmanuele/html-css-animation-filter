@@ -1,0 +1,212 @@
+/* esercizio 1 */
+
+div.ex-1-square {
+    transition: background .8s linear;
+}
+
+div.ex-1-square:hover {
+    background: #FF0000;
+}
+
+/* esercizio 2 */
+
+div.ex-2-square {
+    transition: width 1.5s ease-in-out;
+}
+
+div.ex-2-square:active {
+    width: 100%;
+}
+
+/* esercizio 3 */
+
+div.ex-3-square {
+    transition: border-radius .3s ease-in;
+}
+
+div.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+/* esercizio 4 */
+
+div.ex-4-square {
+    transition: opacity .8s ease-in-out;
+}
+
+div.ex-4-square:hover {
+    opacity: 0;
+}
+
+/* esercizio 5 */
+
+div.ex-5-square {
+    transition: transform .6s ease-in;
+}
+
+div.ex-5-square:hover {
+    transform: scale(2);
+}
+
+div.ex-5-square:active {
+    transform: scale(.5);
+}
+
+/* esercizio 6 */
+
+img.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+/* esercizio 7 */
+
+img.ex-7-img {
+    transition: filter 1s ease-in-out;
+}
+
+img.ex-7-img:hover {
+    filter: grayscale(50%) sepia(50%);
+}
+
+/* esercizio 8 */
+
+img.ex-8-img {
+    transition: all .8s ease-in-out;
+}
+
+img.ex-8-img:hover {
+    filter: grayscale(50%) sepia(50%);
+    border-radius: 10px;
+}
+
+/* esercizio 9 */
+
+img.ex-9-img {
+    transition: all 1.5s ease-in-out;
+}
+
+img.ex-9-img:hover {
+    filter: grayscale(50%) sepia(50%);
+    border-radius: 20px;
+    transform: scale(1.4);
+}
+
+/* esercizio 10 */
+
+i.ex-10-icon.fa-circle-notch {
+    animation: spin 1s linear infinite reverse;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg) }
+}
+
+/* esercizio 11 */
+
+i.ex-11-icon.fa-circle-notch:hover {
+    animation: spin-1 linear 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes spin-1 {
+    0% { transform: rotate(0deg) }
+    75% { transform: rotate(270deg) }
+}
+
+/* esercizio 12 */
+
+a.ex-12-button:hover > div.ex-12-top-white {
+    animation: move-dx linear 2s;
+    animation-iteration-count: 1;
+}
+
+a.ex-12-button:hover > div.ex-12-bottom-white {
+    animation: move-sx linear 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes move-dx {
+    50% {
+        left: calc(100% - 60px);
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes move-sx {
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    100% {
+        right: 20%;
+    }
+}
+
+/* esercizio 13 */
+
+a.ex-13-button:hover > div.ex-13-top-white {
+    animation: move-dx-1 linear 4s;
+    animation-iteration-count: 1;
+}
+
+a.ex-13-button:hover > div.ex-13-bottom-white {
+    animation: move-sx-1 linear 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes move-dx-1 {
+    20% {
+        top: -10px;
+        left: 100%;
+    }
+
+    40% {
+        top: calc(100% - 20px);
+        left: 100%;
+    }
+
+    60% {
+        top: 100%;
+        left: 0;
+    }
+
+    80% {
+        top: -10px;
+        left: -10px;
+    }
+
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+@keyframes move-sx-1 {
+    20% {
+        bottom: -10px;
+        right: calc(100% - 60px);
+    }
+
+    40% {
+        bottom: calc(100% - 20px);
+        right: calc(100% - 20px);
+    }
+
+    60% {
+        bottom: 100%;
+        right: -10px;
+    }
+
+    80% {
+        bottom: -10px;
+        right: 0;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
